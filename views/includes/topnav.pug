@@ -1,0 +1,28 @@
+.header.clearfix
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
+    .container.nav
+      a.navbar-brand(href="/") Partybrite
+      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarsExampleDefault", aria-controls="navbarsExampleDefault", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+
+      #navbarsExampleDefault.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="/browse") BROWSE PARTY
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") ORGANIZE
+            div.dropdown-menu(aria-labelledby="dropdownMenuButton")
+              a.dropdown-item(href="/overview") Overview
+              a.dropdown-item(href="/pricing") Pricing
+              a.dropdown-item(href="/blog") Blog
+              a.dropdown-item(href="/resources") Resources
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") HELP
+            div.dropdown-menu(aria-labelledby="dropdownMenuButton")
+              a.dropdown-item(href="/overview") Where are my tickets?
+              a.dropdown-item(href="/pricing") How to contact the event organizer
+              a.dropdown-item(href="/blog") Help Center
+          li.nav-item
+            a.nav-link(href='/users/new') SIGN IN
+          li.nav-item
+            a.nav-link(href='/users/new', id="blue") CREATE PARTY
